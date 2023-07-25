@@ -1,0 +1,21 @@
+<%= form_with(model: @user, url: wizard_path, method: :patch, local: true) do |f| %>
+    ...
+
+<div class="py-2">
+    <%= f.label :city_name %>
+    <%= f.text_field :city_name %><br/>
+</div>
+    <%= f.label :school_name %>
+    <%= f.text_field :school_name %><br/>
+<div class="field">
+    <%= f.label :contact_1 %>
+    <%= f.text_field :contact_1 %><br/>
+</div>
+
+<div class="field py-2">
+    <%= f.label :contact_2 %>
+    <%= f.text_field :contact_2 %><br/>
+</div>
+    <%= f.submit "Next", class:"fields" %>
+<% end %>
+

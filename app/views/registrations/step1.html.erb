@@ -1,0 +1,18 @@
+<%= form_with(model: @user, url: registrations_path, method: :post, local: true) do |f| %>
+
+
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %><br/>
+
+    <div class="field py-2">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %><br/>
+    </div>
+    <div class="py-2">
+    <%= f.label :email %>
+    <%= f.text_field :email %><br/>
+    </div>
+
+    <%= f.submit "Next",class:"fields" %>
+<% end %>
+
